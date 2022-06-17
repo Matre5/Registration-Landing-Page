@@ -1,0 +1,268 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-size: 16px;
+    box-sizing: border-box;
+   /* color:  rgb(255, 122, 122); */
+}
+@font-face {
+    font-family: Popp400;
+    src: url(Poppins-Regular.ttf);
+}
+@font-face {
+    font-family: Popp500 ;
+    src: url(Poppins-Medium.ttf);
+}
+@font-face {
+    font-family:Popp600 ;
+    src: url(Poppins-SemiBold.ttf);
+}
+@font-face {
+    font-family:Popp700;
+    src: url(Poppins-Bold.ttf);
+}
+body{
+    width: 1440px;
+    display: flex;
+    place-items: center;
+    height: auto;
+    background-color: black ;
+    align-items: center;
+    min-height: 100vh;
+    
+    
+}
+
+button, h1,span,p{
+    color: white;
+}
+main{
+    width: 80%;
+    
+    margin: auto;
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    place-items: center;
+    padding:2% 7%;
+    /* background-color: hsl(0, 100%, 74%); */
+    background: 
+    /* linear-gradient(45, var(hsl(0, 100%, 74%))) */
+    rgba(255, 122, 122, 1)
+    url(./bgdesk.png) no-repeat center 
+    center / cover;
+
+    
+
+}
+.side {
+    width: 70%;
+    text-align: left;
+    padding: 25px;
+    margin: 15px;
+}
+.side h1{
+    padding:0 0 0 5px;
+    font-family: Popp700;
+    font-size: 40px;
+    width: 90%;
+    padding: 0;
+    margin: 10px 0;
+    line-height: 45px; 
+}
+.side p{
+    font-size: 12px;
+    margin: 20px 0;
+    line-height: 20px;
+    font-family: Popp500;
+
+}
+.ppp p{
+    font-size: 10px;
+    padding: 5px ;
+}
+span{
+    font-family: Popp400;
+}
+.formyy p{
+    font-size: 10px;
+}
+.formyy{
+    width: 80%;
+    margin: 30px;
+}
+form{
+    text-align: center;
+    place-items: center;
+    width: 100%;
+    background-color: white;
+    border-radius: 5px;
+    margin: 15px;
+    display: flex;
+    flex-direction: column;
+    padding: 20px 20px;
+    
+}
+.formc{
+    position: relative;
+    margin-bottom: 5px;
+    padding-bottom: 20px;
+    width: 90%;
+}
+.formc i{
+   visibility: hidden;
+   position: absolute;
+   top: 30px;
+   right: 25px;
+}
+.formc label{
+    display: inline-block;
+    margin-bottom: 5px;
+}
+.formc input{
+    display: block;
+    width: 100%;
+}
+.formc small{
+    visibility: hidden;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    font-style: italic;
+    font-family: Popp400;
+    font-size: 10px;
+}
+/* .formyy label{
+    border-radius: 15px;
+} */
+
+.upp {
+    background-color:hsl(248, 32%, 49%) ;
+    text-align: center;
+    display: flex;
+    padding: 20px;
+    margin: 15px;
+    width: 100%;
+    border-radius: 5px;
+
+}
+.For input{
+    border: 1px solid #d6cdcd;
+    border-radius: 5px;
+
+}
+.box{
+    padding: 10px;
+    margin-bottom: 5px;
+    width: 90%;
+    font-family: Popp600;
+    border: 2px thin rgb(197, 186, 186);
+    font-size: 10px;
+}
+.box :placeholder-shown{
+    color: black;
+}
+.tandc{
+    font-size: xx-small;
+    padding: 10px;
+    color: #d6cdcd;
+    font-family: Popp400;
+}
+.tandc a{
+    font-size: xx-small;
+    color: hsl(0, 100%, 74%);
+    text-decoration: none;
+}
+button{
+    background-color:hsl(154, 59%, 51%) ;
+    text-align: center;
+    width: 90%;
+    padding: 10px;
+    word-wrap: nowrap;
+    border: 2px solid hsl(154, 59%, 51%);
+    border-radius: 5px;
+    margin-bottom: 5px;
+    font-family: Popp500;
+    font-size: 12px;
+}
+@media screen and (max-width:560px) {
+    body{
+        width: 325px;
+        height: 1000px;
+        /* width: fit-content; */
+        margin: auto;
+    }
+    main{
+
+        display: flex;
+        flex-direction: column;
+        padding: 5% o;
+        margin: auto;
+        width: 100%;
+        height: auto;
+        background:
+        rgba(255, 122, 122, 0.9)
+        url(./bgphone.png)
+        ;
+    }
+    div{
+        padding: 0;
+        margin: 0;
+    }
+
+    .side {
+        width: 100%;
+        height: 100%;
+        text-align: left;
+        padding: 20px 20px 5px 20px;
+        margin: 20px;
+        top: 0;
+    }
+    .formyy{
+        width: 100%;
+        height: 50%;
+        border-radius: 10px;
+        padding: 20px 0 40px 0;
+    }
+    .side h1{
+        padding:0 0 0 20px;
+        font-family: Popp700;
+        font-size: 1.5em;
+        text-align: center;
+    }
+    .side p{
+        font-family: Popp500;
+        font-size: 17px;
+        text-align: center;
+        margin: 20px 0;
+        line-height: 20px;
+    }
+    .box{
+        padding: 5px;
+    }
+    form{
+        text-align: center;
+        place-items: center;
+        width: 100%;
+        background-color: white;
+        border-radius: 5px;
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        padding: 30px 10px;
+        
+    }
+    .upp{
+        width: 100%;
+        margin: auto;
+        margin-bottom: 20px;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+    }
+    .tandc{
+        text-align: center;
+        font-size: small;
+    }
+}
