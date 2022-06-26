@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Registration form</title>
     <link rel="stylesheet" href="index.css">
-    <link rel="stylesheet" href="css/all.css">
+    <!-- <link rel="stylesheet" href="css/all.css"> -->
 </head>
 
 <body>
@@ -30,46 +30,43 @@
                 <br>
                 <p class="ppp">   then $20/mo. thereafter</p>
             </div>
-            <form class="For">
+            <form class="For" id="form">
                 <div class="formc">
-                    <label for="name"></label>
-                    <input type="text" name="name" id="name" class="box" placeholder="Jonathan |">
-                    <i class="fas fa-check-circle"></i>
-                    <i class="fas fa-exclamation-circle"></i>
+                    <label for="Uname"></label>
+                    <input type="text" name="name" id="Uname" class="box" placeholder="Jonathan |">
+                    <img src="icon-error.svg" class="icon" alt="">
                     <small>Error message</small>
                 </div>
                     <!-- <br> -->
                 <div class="formc">
                     <label for="Lname"></label>
                     <input type="text" name="lname" id="Lname" class="box" placeholder="Last Name">
-                    <i class="fas fa-check-circle"></i>
-                    <i class="fas fa-exclamation-circle"></i>
-                    <small>Error message</small>
+                    <img src="icon-error.svg" class="icon" alt="">
+                    <small>Last Name cannot be empty</small>
                 </div>
                     <!-- <br> -->
                 <div class="formc">
                     <label for=" mailll"></label>
                     <input type="email" name="mill" id="mailll" class="box" placeholder="Email Address">
-                    <i class="fas fa-check-circle"></i>
-                    <i class="fas fa-exclamation-circle"></i>
+                    <img src="icon-error.svg" class="icon" alt="">
                     <small>Error message</small>
                 </div>
                     <!-- <br> -->
                 <div class="formc">
                     <label for="passy"></label>
                     <input type="password" name="passy" id="passy" class="box" placeholder="Password">
-                    <i class="fas fa-check-circle"></i>
-                    <i class="fas fa-exclamation-circle"></i>
+                    <img src="icon-error.svg" class="icon" alt="">
                     <small>Error message</small>
                 </div>
                     <!-- <br> -->
-                    <button type="button">CLAIM YOUR FREE TRIAL</button>
+                    <button type="submit">CLAIM YOUR FREE TRIAL</button>
                     <p class="tandc">By clicking the button you are
                         agreeing with <a href="#">Terms and Services</a>
                     </p>
                 
             </form>
     </main>
+    <script src="index.js"></script>
 </body>
 
 </html>
