@@ -45,7 +45,7 @@ main{
     align-items: center;
     justify-content: center;
     place-items: center;
-    padding:2% 7%;
+    padding:2% 5%;
     /* background-color: hsl(0, 100%, 74%); */
     background: 
     /* linear-gradient(45, var(hsl(0, 100%, 74%))) */
@@ -65,23 +65,20 @@ main{
 .side h1{
     padding:0 0 0 5px;
     font-family: Popp700;
-    font-size: 40px;
+    font-size: 45px;
     width: 90%;
     padding: 0;
     margin: 10px 0;
-    line-height: 45px; 
+    line-height: 50px; 
 }
 .side p{
-    font-size: 12px;
+    font-size: 13px;
     margin: 20px 0;
     line-height: 20px;
-    font-family: Popp500;
+    font-family: Popp400;
 
 }
-.ppp p{
-    font-size: 10px;
-    padding: 5px ;
-}
+
 span{
     font-family: Popp400;
 }
@@ -89,7 +86,7 @@ span{
     font-size: 10px;
 }
 .formyy{
-    width: 80%;
+    width: 60%;
     margin: 30px;
 }
 form{
@@ -97,7 +94,7 @@ form{
     place-items: center;
     width: 100%;
     background-color: white;
-    border-radius: 5px;
+    border-radius: 10px;
     margin: 15px;
     display: flex;
     flex-direction: column;
@@ -106,8 +103,8 @@ form{
 }
 .formc{
     position: relative;
-    margin-bottom: 5px;
-    padding-bottom: 20px;
+    /* margin-bottom: 5px; */
+    padding-bottom: 10px;
     width: 90%;
 }
 .formc img{
@@ -118,11 +115,12 @@ form{
 }
 .formc label{
     display: inline-block;
-    margin-bottom: 5px;
+    /* margin-bottom: 5px; */
 }
 .formc input{
     display: block;
     width: 100%;
+    font-size: 13px;
 }
 .formc small{
     visibility: hidden;
@@ -133,6 +131,8 @@ form{
     font-family: Popp400;
     font-size: 10px;
 }
+
+
 .formc.success input{
     border-color: #2ecc71;
 }
@@ -143,12 +143,10 @@ form{
 .formc.error input{
     border-color: hsl(0, 100%, 74%);
     border: 2px solid hsl(0, 100%, 74%);
+    margin-bottom: 10px;
+    padding-bottom: 10px;
 }
-.formc.error::placeholder{
-    visibility: hidden;
-    display: none;
-    opacity: 0;
-}
+
 .formc.error img{
     visibility: visible;
     color: hsl(0, 100%, 74%);
@@ -156,24 +154,35 @@ form{
 .formc.error small{
     visibility: visible;
     color: hsl(0, 100%, 74%);
+    /* padding-bottom: 10px; */
 }
 /* .formyy label{
     border-radius: 15px;
 } */
-
 .upp {
     background-color:hsl(248, 32%, 49%) ;
     text-align: center;
-    display: flex;
-    padding: 20px;
+    padding: 15px;
     margin: 15px;
     width: 100%;
-    border-radius: 5px;
+    border-radius: 10px;
 
+}
+.try{
+    font-family: Popp500;
+    font-weight: lighter;
+    font-size: 15px;
+}
+.ppp{
+    font-size: 12px;
+    font-weight: lighter;
+    font-family: Popp400;
+    text-decoration: thin;
 }
 .For input{
     border: 1px solid #d6cdcd;
     border-radius: 5px;
+    padding-left: 20px;
 
 }
 .box{
@@ -186,6 +195,9 @@ form{
 }
 .box :placeholder-shown{
     color: black;
+}
+.box::placeholder{
+    padding-left: 20px;
 }
 .tandc{
     font-size: xx-small;
@@ -215,7 +227,7 @@ button:hover{
 }
 @media screen and (max-width:560px) {
     body{
-        width: 325px;
+        width: 100%;
         height: 1000px;
         /* width: fit-content; */
         margin: auto;
@@ -224,7 +236,7 @@ button:hover{
 
         display: flex;
         flex-direction: column;
-        padding: 5% o;
+        padding: 5% 5%;
         margin: auto;
         width: 100%;
         height: auto;
@@ -243,24 +255,25 @@ button:hover{
         height: 100%;
         text-align: left;
         padding: 20px 20px 5px 20px;
-        margin: 20px;
+        margin-top: 30px;
         top: 0;
     }
     .formyy{
         width: 100%;
         height: 50%;
         border-radius: 10px;
-        padding: 20px 0 40px 0;
+        padding: 10px 0 40px 0;
     }
     .side h1{
         padding:0 0 0 20px;
         font-family: Popp700;
         font-size: 1.5em;
         text-align: center;
+        line-height: 30px;
     }
     .side p{
-        font-family: Popp500;
-        font-size: 17px;
+        font-family: Popp400;
+        font-size: 13px;
         text-align: center;
         margin: 20px 0;
         line-height: 20px;
@@ -271,23 +284,33 @@ button:hover{
     form{
         text-align: center;
         place-items: center;
-        width: 100%;
+        width: 90%;
         background-color: white;
-        border-radius: 5px;
+        border-radius: 10px;
         margin: auto;
         display: flex;
         flex-direction: column;
         padding: 30px 10px;
         
     }
+
+    .formc input{
+        padding: 20px;
+    }
+    .box::placeholder{
+        font-size: 13px;
+        padding-left: 5px; ;
+    }
+
     .upp{
-        width: 100%;
+        width: 90%;
         margin: auto;
         margin-bottom: 20px;
-        display: flex;
         flex-wrap: wrap;
         align-items: center;
+        border-radius: 10px;
     }
+    .upp h1
     .tandc{
         text-align: center;
         font-size: small;
